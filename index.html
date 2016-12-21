@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Rupee Roundup</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Rupee Roundup</h1>
+	</div>
+
+	<div class="instructions">
+		
+		<h3>Here Is How You Play</h3>
+		
+		<img src="assets/images/links.png" id="links" alt="Link Image">
+		<br><br>
+		<ol>
+			<li>You will have a random number set to <span>"Your Goal"</span></li>
+			<li>Choose from four different Rupees of:</li>
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="orange">Orange</li>
+				<li id="purple">Purple</li>
+			</ul>
+			<li>Clicking on a Rupee will add its current value your total score.</li>
+			<li>You win the game by your total score equaling the Goal.</li>
+			<li>You loose the game by your total score exceeding the Goal.</li>
+			<li>The value of each Rupee is hidden, until you click it.</li>
+			<li>Each time you win or loose, the Goal and value of each Rupee will change.</li>
+		</ol>
+
+
+	</div>
+	<div class="numberToMatch">
+		<h2>Your Goal:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Victorys:
+			<span id= "numberWins"></span>
+			</br>
+			Defeats: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="assets/images/blue3d.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green3d.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/orange3d.png" class=gemImage id= "three" alt="Orange Gem">
+		<img src="assets/images/purple3d.png" class=gemImage id= "four" alt="Purple Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
